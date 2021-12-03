@@ -1,0 +1,41 @@
+.form-control {
+    width: 100%;
+}
+
+.form-invalid {
+    color: #ff0000;
+    font-style: italic;
+}
+
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.todo-item input {
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+   font-size: 36px;
+}
+
+.todo-item input[type=checkbox]:checked::after {
+    top: 0.08em;
+}
+
+.todo-item label {
+    font-size: 36px;
+}
+
+.todo-info{
+    display: flex;
+    justify-content: space-between;
+}
+
+input:checked + label {
+    text-decoration: line-through;
+}
+
+input.disabledButton {
+    color: black;
+}

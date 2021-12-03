@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="TODO App with Vue.js" />
+        <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css" />
+        <title>TODO App with Vue.js</title>
+        <link rel="stylesheet" href="assets/style.css">
+        <link rel="shortcut icon" href="assets/images/todo-icon.png" type="image/png">
+        <!-- Import vue.js -->
+        <script src="https://unpkg.com/vue@next"></script>
+    </head>
+    <body>
+        <div id="app">
+            <h1>TODO App with Vue.js</h1>
+            <todo-form></todo-form>
+        </div>
+        <!-- Import App -->
+        <script src="main.js"></script>
+
+        <!-- Import Components -->
+        <script src="./components/TodoForm.js"></script>
+        <script src="./components/TodoInfo.js"></script>
+        <script src="./components/TodoList.js"></script>
+
+        <!-- Mount App -->
+        <script>
+            const mountApp = app.mount("#app")
+        </script>
+    </body>
+</html>
