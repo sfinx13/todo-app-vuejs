@@ -64,7 +64,7 @@ input.disabledButton {
         font-size: 13px;
     }
     
-    .todo-item input {
+    .todo-item input[type=text] {
         font-size: 1.15rem;
     }
   }
