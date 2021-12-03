@@ -24,7 +24,8 @@
 }
 
 .todo-item label {
-    font-size: 36px;
+    font-size: 2rem;
+    padding-left: 8px;
 }
 
 .todo-info{
@@ -44,3 +45,26 @@ input:checked + label {
 input.disabledButton {
     color: black;
 }
+
+.todo-item-display {
+    flex-grow: 0;
+    flex-grow: 0;
+    flex-basis: 80%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.todo-item-action {
+    flex-basis: 100px;
+}
+
+@media screen and (max-width: 600px) {
+    html {
+        font-size: 13px;
+    }
+    
+    .todo-item input {
+        font-size: 1.15rem;
+    }
+  }
