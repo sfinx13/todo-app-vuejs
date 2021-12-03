@@ -17,6 +17,7 @@ An app to experiment the fundamentals of Vue3, was installed via direct <script>
 Guide : https://v3.vuejs.org/guide/introduction.html
 
 * Components
+* Methods
 * Props
 * Attribute binding
 * Special Attributes (key)
