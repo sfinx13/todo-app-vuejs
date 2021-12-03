@@ -8,7 +8,7 @@
        
 ## Todo app with Vue.js
 
-An app to experiment the fundamentals of Vue3 
+An app to experiment the fundamentals of Vue3, was installed via direct <script> include
 
 <img src="https://github.com/sfinx13/todo-app-vuejs/raw/main/assets/images/screenshoot.png" alt="Todo App" width="500"/>
 
