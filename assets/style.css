@@ -32,8 +32,12 @@
     justify-content: space-between;
 }
 
+input + label {
+    cursor: pointer;
+}
+
 input:checked + label {
-    text-decoration: line-through;
+    text-decoration: line-through 16px rgba(255, 0, 0, 0.4);
 }
 
 input.disabledButton {
