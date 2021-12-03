@@ -6,8 +6,12 @@
     </a>
 </p>
        
-# Todo app with Vue.js
+## Todo app with Vue.js
 
 An app to experiment the fundamentals of Vue3 
 
 ![Todo app](https://github.com/sfinx13/todo-app-vuejs/raw/main/assets/images/screenshoot.png)
+
+## Demo
+
+https://sfinx13.github.io/todo-app-vuejs/
