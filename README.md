@@ -10,7 +10,19 @@
 
 An app to experiment the fundamentals of Vue3 
 
-![Todo app](https://github.com/sfinx13/todo-app-vuejs/raw/main/assets/images/screenshoot.png)
+<img src="https://github.com/sfinx13/todo-app-vuejs/raw/main/assets/images/screenshoot.png" alt="Todo App" width="500"/>
+
+## Key concepts applied
+
+Guide : https://v3.vuejs.org/guide/introduction.html
+
+* Components
+* Props
+* Attribute binding
+* Special Attributes (key)
+* Rendering
+* Events
+* Forms and v-model
 
 ## Demo
 
