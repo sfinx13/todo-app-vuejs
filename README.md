@@ -8,23 +8,29 @@
        
 ## Todo app with Vue.js
 
-An app to experiment the fundamentals of Vue3, was installed via direct <script> include
+An app to experiment the fundamentals of Vue3, was installed via direct ``<script>`` include
 
-<img src="https://github.com/sfinx13/todo-app-vuejs/raw/main/assets/images/screenshoot.png" alt="Todo App" width="500"/>
+<img src="assets/images/wireframe.png" alt="Prototype" width="600"/>
 
 ## Key concepts applied
 
 Guide : https://v3.vuejs.org/guide/introduction.html
 
 * Components
+* Directives
 * Methods
 * Props
 * Attribute binding
-* Special Attributes (key)
+* Special Attributes
 * Rendering
 * Events
 * Forms and v-model
+* Shorthand syntax
 
 ## Demo
 
-https://sfinx13.github.io/todo-app-vuejs/
+### Link : https://sfinx13.github.io/todo-app-vuejs/
+
+
+<img src="https://github.com/sfinx13/todo-app-vuejs/raw/main/assets/images/screenshoot.png" alt="Screenshot" width="600"/>
+
