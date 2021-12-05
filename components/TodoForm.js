@@ -33,9 +33,10 @@ app.component("todo-form", {
             this.details.total = this.items.length
         },
         removeItem(id) {
-            this.items = this.items.filter(item => item.id !== id )
+            const index = this.items.findIndex( item => item.id === id)
+            this.items.splice(index, 1)
             this.details.total = this.items.length
-            this.details.done = this.details.done > this.details.total ? this.details.total : this.details.done
+            this.details.done = this.items.reduce((acc, item) => acc + item.checked, 0)
         },
         terminateItem(id) {
              const index = this.items.findIndex( item => item.id === id)
