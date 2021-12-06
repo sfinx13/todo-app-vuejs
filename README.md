@@ -16,6 +16,8 @@
 
 ### [📗 Guide Introduction Vue.js](https://v3.vuejs.org/guide/introduction.html)
 
+* Global API `createApp`
+    * Returns an application instance which provide an application context. The entire component tree mounted by the application instance share the same context.
 * Components
 * Directives
 * Methods
