@@ -27,6 +27,6 @@
 * Forms and v-model
 * Shorthand syntax
 
-## 💻 [🚀 Demo link](https://sfinx13.github.io/todo-app-vuejs/)
+## [🚀 Demo link](https://sfinx13.github.io/todo-app-vuejs/)
 <img src="https://github.com/sfinx13/todo-app-vuejs/raw/main/assets/images/screenshoot.png" alt="Screenshot" width="600"/>
 
