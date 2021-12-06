@@ -6,15 +6,15 @@
     </a>
 </p>
        
-## Todo app with Vue.js
+## 💻 Todo app with Vue.js
 
-An app to experiment the fundamentals of Vue3, was installed via direct ``<script>`` include
+> An app to experiment the fundamentals of Vue3, was installed via direct ``<script>`` include
 
 <img src="assets/images/wireframe.png" alt="Prototype" width="600"/>
 
-## Key concepts applied
+## 💻 Key concepts applied
 
-Guide : https://v3.vuejs.org/guide/introduction.html
+### [📗 Guide Introduction Vue.js](https://v3.vuejs.org/guide/introduction.html)
 
 * Components
 * Directives
@@ -27,10 +27,6 @@ Guide : https://v3.vuejs.org/guide/introduction.html
 * Forms and v-model
 * Shorthand syntax
 
-## Demo
-
-### Link : https://sfinx13.github.io/todo-app-vuejs/
-
-
+## 💻 [🚀 Demo link](https://sfinx13.github.io/todo-app-vuejs/)
 <img src="https://github.com/sfinx13/todo-app-vuejs/raw/main/assets/images/screenshoot.png" alt="Screenshot" width="600"/>
 
