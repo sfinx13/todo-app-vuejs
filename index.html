@@ -7,14 +7,17 @@
         <meta name="description" content="TODO App with Vue.js" />
         <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css" />
         <title>TODO App with Vue.js</title>
-        <link rel="stylesheet" href="assets/style.css">
-        <link rel="shortcut icon" href="assets/images/todo-icon.png" type="image/png">
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <link rel="shortcut icon" href="assets/images/todo-icon.png" type="image/png" />
         <!-- Import vue.js -->
         <script src="https://unpkg.com/vue@next"></script>
     </head>
     <body>
         <div id="app">
-            <h1>TODO App with Vue.js</h1>
+            <h1>
+                📝TODO App with 
+                <img src="./assets/images/logo-vue.png" alt="logo vue.js" width="45" height="45" />ue.js
+            </h1>
             <todo-form></todo-form>
         </div>
         <!-- Import App -->
@@ -27,7 +30,7 @@
 
         <!-- Mount App -->
         <script>
-            const mountApp = app.mount("#app")
+            const mountApp = app.mount("#app");
         </script>
     </body>
 </html>

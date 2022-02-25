@@ -7,6 +7,6 @@ app.component('todo-info', {
     },
     template: `
         <div class="todo-info">
-            <div>{{ details.total - details.done }} remaining</div> <div>Total : {{ details.total  }}</div>
+            <div>{{ details.total - details.done }} remaining</div> <div>{{ details.total }} item<span v-if="details.total > 1">s</span></div>
         </div>`
 })

@@ -1,0 +1,86 @@
+.form-control {
+    width: 100%;
+}
+
+.form-invalid {
+    color: #ff0000;
+    font-style: italic;
+}
+
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.todo-item input {
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+   font-size: 36px;
+   cursor: pointer;
+}
+
+.todo-item input[type=checkbox]:checked::after {
+    top: 0.08em;
+}
+
+.todo-item label {
+    display: inline-block;
+    font-size: 2rem;
+    padding-left: 8px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 500px;
+    outline: 0;
+}
+
+.todo-info {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+input + label {
+    cursor: pointer;
+}
+
+input:checked + label {
+    text-decoration: line-through 16px rgba(255, 0, 0, 0.4);
+}
+
+input.disabledButton {
+    color: black;
+}
+
+.todo-item-display {
+    flex-grow: 0;
+    flex-basis: 80%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.todo-item-action {
+    flex-basis: 110px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.remove-button {
+    background-color: red;
+}
+
+.edit-button {
+    background-color: green;
+}
+
+@media screen and (max-width: 600px) {
+    html {
+        font-size: 13px;
+    }
+    
+    .todo-item input[type=text] {
+        font-size: 1.15rem;
+    }
+  }

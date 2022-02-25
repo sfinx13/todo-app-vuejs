@@ -12,7 +12,7 @@ app.component("todo-form", {
             </div>
         </div>
         <todo-info :details="details"></todo-info>
-        <todo-list :items="items" @remove-item="removeItem" @terminate-item="terminateItem"></todo-list>`,
+        <todo-list :items="items" @remove-item="removeItem" @update-item="updateItem" @terminate-item="terminateItem"></todo-list>`,
     data() {
         return {
             items: [],
@@ -37,6 +37,10 @@ app.component("todo-form", {
             this.items.splice(index, 1)
             this.details.total = this.items.length
             this.details.done = this.items.reduce((acc, item) => acc + item.checked, 0)
+        },
+        updateItem(id, title) {
+            const index = this.items.findIndex( item => item.id === id)
+            this.items[index].title = title
         },
         terminateItem(id) {
              const index = this.items.findIndex( item => item.id === id)

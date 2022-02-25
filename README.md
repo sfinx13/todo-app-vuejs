@@ -17,14 +17,21 @@
 ### [📗 Guide Introduction Vue.js](https://v3.vuejs.org/guide/introduction.html)
 
 * Components
+    - Define a component
+    - Use a component
+    - Attribute, class, style, form input binding
+    - Listen to events
+    - Declare methods
+    - Passing props
+    - Emit and listen to custom events
 * Directives
-* Methods
-* Props
-* Attribute binding
+    - v-if
+    - v-for
+    - v-model
+    - v-on
 * Special Attributes
-* Rendering
-* Events
-* Forms and v-model
+    - key
+    - ref
 * Shorthand syntax
 
 ## [🚀 Demo link](https://sfinx13.github.io/todo-app-vuejs/)
