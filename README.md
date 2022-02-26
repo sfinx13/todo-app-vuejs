@@ -21,7 +21,7 @@
 * Components
     - Define a component
     - Use a component
-    - Attribute, class, style, form input binding
+    - Attribute class, style, form input binding
     - Listen to events
     - Declare methods
     - Passing props

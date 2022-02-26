@@ -10,11 +10,14 @@ app.component("todo-list", {
             <div v-for="item in items" class="todo-item" :key="item.id" ref="items">
                 <div class="todo-item-display">
                     <input type="checkbox" :checked="item.checked" @click="terminateItem(item.id)" :id="item.id"/>
-                    <label contenteditable="false"  @keyup.enter="updateItem(item.id)">{{item.title}}</label>
+                    <label
+                        :contenteditable="item.editable" 
+                        :class="{ editable: item.editable }"  
+                        @keyup.enter="updateItem(item.id, $event)">{{ item.title }}</label>
                 </div>
                 <div class="todo-item-action">
-                    <button @click="updateItem(item.id)">
-                        <img src="./assets/images/edit-icon.svg" width="24">
+                    <button @click="updateItem(item.id, $event)" :style="{ background: item.color }">
+                        <img :src="'./assets/images/' + item.icon" width="24">
                     </button>
                     <button class="remove-button" @click="removeItem(item.id)">
                         <img src="./assets/images/trash-icon.svg" width="24">
@@ -24,22 +27,28 @@ app.component("todo-list", {
         </div>`,
 
     methods: {
-        updateItem(id) {
-            const label = this.$refs.items[id - 1].querySelector("label")
-            const button = this.$refs.items[id - 1].querySelector(".todo-item-action button")
-            const img = this.$refs.items[id - 1].querySelector(".todo-item-action img")
-            if ('false' == label.contentEditable) {
-                label.contentEditable = 'true';
-                label.focus();
-                label.style.borderBottom = "2px solid blue";
-                button.classList.add('edit-button')
-                img.src = './assets/images/check-icon.svg';
+        updateItem(id, event) {
+            event.preventDefault()
+            const currentElement = event.target
+            const index = this.items.findIndex((item) => item.id === id)
+            console.log(`click ${index}`)
+            let label
+            if (currentElement.tagName === 'IMG') {
+                label = currentElement.parentElement.parentElement.previousElementSibling.querySelector('label')
+            } else if (currentElement.tagName === 'BUTTON') {
+                label = currentElement.parentElement.previousElementSibling.querySelector('label')
             } else {
-                label.contentEditable = 'false';
-                label.style.borderBottom = "0 solid blue";
-                button.classList.remove('edit-button')
-                img.src = './assets/images/edit-icon.svg';
-                this.$emit("update-item", id, label.textContent);
+                label = currentElement
+            }
+            if (!this.items[index].editable) {
+                this.items[index].editable = true
+                this.items[index].icon = 'check-icon.svg'
+                this.items[index].color = 'green'
+            } else {
+                this.items[index].editable = false;
+                this.items[index].icon = 'edit-icon.svg'
+                this.items[index].color = '#0d47a1'
+                this.items[index].title = label.textContent
             }
         },
         removeItem(id) {

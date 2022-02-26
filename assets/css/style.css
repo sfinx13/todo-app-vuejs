@@ -71,8 +71,8 @@ input.disabledButton {
     background-color: red;
 }
 
-.edit-button {
-    background-color: green;
+.editable {
+    border-bottom: 2px solid blue;
 }
 
 @media screen and (max-width: 600px) {
