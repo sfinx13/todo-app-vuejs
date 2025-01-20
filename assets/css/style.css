@@ -20,6 +20,10 @@
    cursor: pointer;
 }
 
+.todo-item input[type="checkbox"] {
+    vertical-align: bottom;
+}
+
 .todo-item input[type=checkbox]:checked::after {
     top: 0.08em;
 }
